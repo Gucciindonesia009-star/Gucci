@@ -17,7 +17,7 @@ export const ConfirmationPage: React.FC<ConfirmationPageProps> = ({ product, onB
         className="flex items-center text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:text-black mb-6 transition-colors"
       >
         <ArrowLeft size={12} className="mr-2" />
-        Back to Agenda
+        Back to Tugas
       </button>
 
       <div className="text-center mb-8">

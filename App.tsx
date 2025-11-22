@@ -43,7 +43,7 @@ const App: React.FC = () => {
   // Handle Agenda Selection from Header Menu
   const handleAgendaSelect = (agendaId: number) => {
     if (isAgendaLocked(agendaId)) {
-      alert("Please complete the previous Agenda to unlock this one.");
+      alert("Please complete the previous Tugas to unlock this one.");
       return;
     }
     setCurrentAgenda(agendaId);
@@ -151,7 +151,7 @@ const App: React.FC = () => {
             {/* Hero Title */}
             <div className="text-center mb-8 mt-4 animate-fadeIn relative">
               <h1 className="text-2xl font-bold font-serif tracking-widest mb-6 uppercase">
-                AGENDA {currentAgenda}
+                TUGAS {currentAgenda}
               </h1>
               
               {/* Approved Stamp on Main Page */}

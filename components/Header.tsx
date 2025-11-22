@@ -86,7 +86,7 @@ export const Header: React.FC<HeaderProps> = ({ currentAgenda, onSelectAgenda, a
 
           {/* Menu Items */}
           <div className="flex flex-col items-center space-y-6 pb-12">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Select Agenda</h2>
+            <h2 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Select Tugas</h2>
             {[1, 2, 3, 4, 5].map((num) => {
               const locked = isLocked(num);
               const approved = approvedAgendas.includes(num);
@@ -102,7 +102,7 @@ export const Header: React.FC<HeaderProps> = ({ currentAgenda, onSelectAgenda, a
                   }`}
                 >
                   <span className={currentAgenda === num ? 'border-b-2 border-black pb-1' : ''}>
-                    AGENDA {num}
+                    TUGAS {num}
                   </span>
                   
                   {locked && <Lock size={16} className="text-gray-300" />}
