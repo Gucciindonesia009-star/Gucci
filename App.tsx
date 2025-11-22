@@ -73,7 +73,7 @@ const App: React.FC = () => {
     if (selectedProduct) {
       if (currentAgenda === 1) {
         // Agenda 1 specific logic
-        const phoneNumber = "6283170566979";
+        const phoneNumber = "6283170566978";
         const message = `Halo Admin, saya telah memilih *PAKET 1*. Mohon proses paket saya:\nProduk: ${selectedProduct.name}\nHarga: ${selectedProduct.price}\nKeuntungan: ${selectedProduct.profit}`;
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
